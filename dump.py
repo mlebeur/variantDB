@@ -14,7 +14,7 @@ class PharmgkbDumper(biothings.hub.dataload.dumper.LastModifiedHTTPDumper):
     SRC_NAME = "pharmgkb"
     SRC_ROOT_FOLDER = os.path.join(DATA_ARCHIVE_ROOT, SRC_NAME)
     SCHEDULE = None
-    UNCOMPRESS = False
-    SRC_URLS = [
-    ]
+    UNCOMPRESS = True
+    SRC_URLS = []
     __metadata__ = {"src_meta": {}}
+
