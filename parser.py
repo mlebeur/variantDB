@@ -26,7 +26,7 @@ def load_dbsnp(data_folder):
 
 
 def load_GnomadGenomes(data_folder):
-    infile = os.path.abspath("/opt/biothings/GnomadGenomes.1.1000.tsv")
+    infile = os.path.abspath("/opt/biothings/GnomadGenomes.1.tsv")
     assert os.path.exists(infile)
     dat = pandas.read_csv(infile,sep="\t",squeeze=True,quoting=csv.QUOTE_NONE).to_dict(orient='records')
     results = {}
