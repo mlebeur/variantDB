@@ -6,7 +6,7 @@
         "uncompress" : false
     },
     "uploader" : {
-        "parser" : "parser:load_annotations",
+        "parser" : "parser:load_dnsnp",
         "on_duplicates" : "error"
     }
 }
