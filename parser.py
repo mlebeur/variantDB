@@ -12,7 +12,7 @@ process_key = lambda k: k.replace(" ","_").lower()
 
 
 def load_dbsnp(data_folder):
-    infile = os.path.abspath("/opt/biothings/Dbsnp.tsv")
+    infile = os.path.abspath("/opt/biothings/Dbsnp_1000000.tsv")
     assert os.path.exists(infile)
     dat = pandas.read_csv(infile,sep="\t",squeeze=True,quoting=csv.QUOTE_NONE).to_dict(orient='records')
     results = {}
@@ -41,7 +41,7 @@ def load_GnomadGenomes(data_folder):
 
 
 def load_clinvar(data_folder):
-    infile = os.path.abspath("/opt/biothings/Clinvar.1000.tsv")
+    infile = os.path.abspath("/opt/biothings/Clinvar.tsv")
     assert os.path.exists(infile)
     dat = pandas.read_csv(infile,sep="\t",squeeze=True,quoting=csv.QUOTE_NONE).to_dict(orient='records')
     results = {}
